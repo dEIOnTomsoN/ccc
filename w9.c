@@ -6,10 +6,10 @@ void printReverse(int arr[], int size);
 void sortDescending(int arr[], int size);
 
 int main() {
-    int u,i;
+    int u,arr[5],i;
     printf("Enter size of the array : ");
     scanf("%d",&u);
- int arr[5];
+
     printf("Enter elements in array : ");
     for(i=0; i<u; i++)
     {
