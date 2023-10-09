@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class SmallestNumberFinder {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the number of elements in the sequence: ");
+        int n = scanner.nextInt();
+        
+        if (n <= 0) {
+            System.out.println("Invalid input. Please enter a positive integer.");
+            return;
+        }
+        
+        System.out.println("Enter the elements of the sequence:");
+        int smallest = Integer.MAX_VALUE; // Initialize smallest to a large value
+        
+        for (int i = 0; i < n; i++) {
+            int currentNumber = scanner.nextInt();
+            if (currentNumber < smallest) {
+                smallest = currentNumber;
+            }
+        }
+        
+        System.out.println("The smallest number in the sequence is: " + smallest);
+        
+        scanner.close();
+    }
+}
